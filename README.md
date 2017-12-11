@@ -48,6 +48,6 @@ Make sure to remove the additional endlines when you copy-paste from the web !
 
 ## About the harmony
 
-We tried to follow as much as possible harmonic rules (eg. Cb instead of B when necessary). These are defined in the destination scale : for instance, if you want to transpose a song to Db, then the 3rd note of the scale is Fb and not E. You don't need your original file to follow these rules for this to work.  
+**transposer** tries to follow as much as possible harmonic rules (eg. Cb instead of B when necessary). These are defined in the destination scale : for instance, if you want to transpose a song to Db, then the 3rd note of the minor scale is Fb and not E. You don't need your original file to follow these rules for this to work.  
 
-However, in [traditional notation of the chords in popular music](https://en.wikipedia.org/wiki/Chord_names_and_symbols_(popular_music)), we avoid writing double-flat (bb) and double-sharp (x) for the sake of readability. Here, when they should appear to be perfectly correct in terms of harmony, we translate the double-flat and double-sharp to their most simple equivalent.
+However, in [traditional notation of the chords in popular music](https://en.wikipedia.org/wiki/Chord_names_and_symbols_(popular_music)), we avoid writing double-flat (bb) and double-sharp (x) for the sake of readability. Here, when they should appear to be perfectly correct in terms of harmony, the double-flat and double-sharp are transposed to their most simple equivalent.
