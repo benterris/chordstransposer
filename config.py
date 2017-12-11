@@ -1,8 +1,8 @@
 allTones = "A#|B#|C#|D#|E#|F#|G#|Ab|Bb|Cb|Db|Eb|Fb|Gb|A|B|C|D|E|F|G"
 
 scales = """A Bb B C C# D Eb E F F# G G#
-B C C# D D# E F F# G G# A A#
 Bb B C Db D Eb E F Gb G Ab A
+B C C# D D# E F F# G G# A A#
 C C# D Eb E F F# G Ab A Bb B
 Db D Eb Fb F Gb G Ab A Bb B C
 D Eb E F F# G Ab A Bb B C C#
