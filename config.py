@@ -15,21 +15,24 @@ Ab A Bb Cb C Db D Eb Fb F Gb G"""
 
 equivalent = {'A#': 'Bb', 'Bb': 'A#', 'B': 'Cb', 'Cb': 'B', 'B#': 'C', 'C': 'B#', 'C#': 'Db', 'Db': 'C#', 'D#': 'Eb', 'Eb': 'D#', 'E': 'Fb', 'Fb': 'E', 'E#': 'F', 'F': 'E#', 'F#': 'Gb', 'Gb': 'F#', 'G#': 'Ab', 'Ab': 'G#'}
 
-
-def buildEquivalent(equivalentConf):
-    equivalent = {}
-    lines = equivalentConf.split('\n')
-    for line in lines :
-        line = line.split(' ')
-        equivalent[line[0]] = line[1]
-        equivalent[line[1]] = line[0]
-    return equivalent
-
-equivalentConf = """A# Bb
-B Cb
-B# C
-C# Db
-D# Eb
-E Fb
-E# F
-F# Gb"""
+# These can be used to generate equivalence between tones
+#
+# def buildEquivalent(equivalentConf):
+#     equivalent = {}
+#     lines = equivalentConf.split('\n')
+#     for line in lines :
+#         line = line.split(' ')
+#         equivalent[line[0]] = line[1]
+#         equivalent[line[1]] = line[0]
+#     return equivalent
+#
+# equivalentConf = """A# Bb
+# B Cb
+# B# C
+# C# Db
+# D# Eb
+# E Fb
+# E# F
+# F# Gb"""
+#
+# equivalent = buildEquivalent(equivalentConf)
