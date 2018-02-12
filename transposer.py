@@ -3,7 +3,6 @@ import config
 import sys
 
 
-# TODO : better finding of chord lines (skip empty lines etc)
 # TODO : not harmonically coherent all the time (double sharp etc)
 
 

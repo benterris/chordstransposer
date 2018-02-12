@@ -34,17 +34,7 @@ He held all the stars in the palm of his hand
 
 ## File format
 
-The song file must have the following structure :  
-
-```
-One text line
-One chords line
-One text line
-One chords line
-etc.
-```
-
-Make sure to remove the additional endlines when you copy-paste from the web !
+Since chord lines are auto-detected, you can structure your file as you wish, though each line must be only text or only chords (not a mix of both).
 
 ## About the harmony
 
