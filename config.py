@@ -15,6 +15,8 @@ Ab A Bb Cb C Db D Eb Fb F Gb G"""
 
 equivalent = {'A#': 'Bb', 'Bb': 'A#', 'B': 'Cb', 'Cb': 'B', 'B#': 'C', 'C': 'B#', 'C#': 'Db', 'Db': 'C#', 'D#': 'Eb', 'Eb': 'D#', 'E': 'Fb', 'Fb': 'E', 'E#': 'F', 'F': 'E#', 'F#': 'Gb', 'Gb': 'F#', 'G#': 'Ab', 'Ab': 'G#'}
 
+chordSymbols = 'ABCDEFGb#-majsu67913°+/ '
+
 # These can be used to generate equivalence between tones
 #
 # def buildEquivalent(equivalentConf):

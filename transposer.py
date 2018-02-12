@@ -27,7 +27,7 @@ def transpose(text, originalTone, destTone):
     destScale = getScale(destTone)
     lines = text.split('\n')
     for i, line in enumerate(lines):
-        if i % 2 :  # if we're on a chord line, that is an odd numbered line
+        if isChordLine(line) :
             result += transposeLine(line, originalScale, destScale) + "\n"
         else :
             result += line + "\n"
@@ -68,6 +68,20 @@ def transposeLine(line, originalScale, destScale):
         sampleLine = sampleLine[:index] + 'X'*len(transposedTone) + sampleLine[index + len(toneToReplace):]
         line = line[:index] + transposedTone + line[index + len(toneToReplace):]
     return line
+
+def isChordLine(line):
+    """
+    Return True if line is a chord line (and not lyrics or title etc.)
+    """
+    if line :
+        tolerance = .1
+        count = 0
+        for c in line :
+            if c not in config.chordSymbols :
+                count += 1
+        return count/len(line) < tolerance
+    return False
+
 
 
 songText = readFromInput(sys.argv[1])
