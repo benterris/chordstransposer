@@ -9,12 +9,12 @@ def transpose(text, from_tone, to_tone):
     the chords
 
     Args:
-        text: the lyrics and chords of the song to be transposed
-        from_tone: the tone in which is the song
-        to_tone: the tone to which we want to transpose the song
+        text (str): the lyrics and chords of the song to be transposed
+        from_tone (str): the tone in which is the song 
+        to_tone (str): the tone to which we want to transpose the song
 
     Returns:
-        The text of the transposed song
+        str: The texte of the transposed song
     """
     result = ""
     original_scale = get_scale(from_tone)
@@ -26,6 +26,23 @@ def transpose(text, from_tone, to_tone):
         else:
             result += line + "\n"
     return result
+
+
+def transpose_by(text, semitones):
+    """
+    Given a text with chords and words, and a number of semitones, transpose the
+    song by this number of semitones
+
+    Args:
+        text (str): the lyrics and chords of the song to be transposed
+        semitones (int): the number of semitones to transpose by (can be negative)
+
+    Returns:
+        str: The texte of the transposed song
+    """
+    a_scale = get_scale('A')
+    to_tone = a_scale[semitones % 12]
+    return transpose(text, 'A', to_tone)
 
 
 def get_scale(tone):
@@ -93,6 +110,7 @@ def is_chord_line(line):
     based on the proportion of chord-like characters in the line
     """
     if line:
+        # Proportion of non-chords symbols allowed in the line:
         tolerance = .1
         count = 0
         for c in line:

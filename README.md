@@ -1,42 +1,48 @@
-# transposer
+# chordstransposer
 
-**transposer** helps musicians by transposing the chords of a song.
+**chordstransposer** helps musicians by transposing the chords of a song.
 
 ## Basic usage example
 
-```bash
-python transposer.py mySong.txt G Bb  # transposes the song mySong for G to B-flat
+If you know the original tone of the song you can choose a destination tone:
+
+```python
+# Transpose the song in song_text from C# to A:
+chordstransposer.transpose(song_text, 'C#', 'A')
 ```
 
-For instance, let's take the file `lost-in-the-stars.txt` :
+Alternatively you can specify a number of semitones to transpose by:
+
+```python
+# Transpose the song 4 semitones below (a minor third):
+chordstransposer.transpose_by(song_text, -4)
+```
+
+## Song file format
+
+The song files are just plaintext, and contain a mix of lyrics lines and chord lines, as they can be found anywhere on the internet.
+
+For instance, this is a valid song file:
 
 ```
+LOST IN THE STARS
+-------------
+
 Before Lord God made the sea and the land,
   G         G°           A-7sus      D  D+
 He held all the stars in the palm of his hand
    G6/B         E7b9         A-7         A-7b5
 ```
 
-You can use transposer to transpose this song in any tone you like, for instance :
-
-```bash
-python transposer.py lost-in-the-stars.txt G F# # transposes lost-in-the-stars from G to F sharp
-```
-
-You can then find in the newly created file (lost-in-the-stars.transposed.txt) :
-
-```
-Before Lord God made the sea and the land,
-  F#         F#°           G#-7sus      C#  C#+
-He held all the stars in the palm of his hand
-   F#6/A#         D#7b9         G#-7         G#-7b5
-```
-
 _These are the first bars of Kurt Weill's [Lost in the Stars](https://www.youtube.com/watch?v=6xJ1u920c2o)_
 
-## File format
+## Installation
 
-Since chord lines are auto-detected, you can structure your file as you wish, though each line must be only text or only chords (not a mix of both).
+Using pip:
+
+```bash
+pip install chordstransposer
+```
 
 ## About the harmony
 

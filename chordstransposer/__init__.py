@@ -1,1 +1,1 @@
-from .transposer import transpose
+from .transposer import transpose, transpose_by
