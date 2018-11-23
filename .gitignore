@@ -1,1 +1,9 @@
+# Python generated
 __pycache__
+
+# Editor specific
+.pylintrc
+.vscode
+
+# Other
+todo

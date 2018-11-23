@@ -1,12 +1,13 @@
 # transposer
 
-**transposer** helps musicians by transposing the chords of a song.  
+**transposer** helps musicians by transposing the chords of a song.
 
 ## Basic usage example
 
 ```bash
 python transposer.py mySong.txt G Bb  # transposes the song mySong for G to B-flat
 ```
+
 For instance, let's take the file `lost-in-the-stars.txt` :
 
 ```
@@ -30,7 +31,8 @@ Before Lord God made the sea and the land,
 He held all the stars in the palm of his hand
    F#6/A#         D#7b9         G#-7         G#-7b5
 ```
-*These are the first bars of Kurt Weill's [Lost in the Stars](https://www.youtube.com/watch?v=6xJ1u920c2o)*
+
+_These are the first bars of Kurt Weill's [Lost in the Stars](https://www.youtube.com/watch?v=6xJ1u920c2o)_
 
 ## File format
 
@@ -38,6 +40,6 @@ Since chord lines are auto-detected, you can structure your file as you wish, th
 
 ## About the harmony
 
-**transposer** tries to follow as much as possible harmonic rules (eg. Cb instead of B when necessary). These are defined in the destination scale : for instance, if you want to transpose a song to Db, then the 3rd note of the minor scale is Fb and not E. You don't need your original file to follow these rules for this to work.  
+**transposer** tries to follow as much as possible harmonic rules (eg. Cb instead of B when necessary). These are defined in the destination scale : for instance, if you want to transpose a song to Db, then the 3rd note of the minor scale is Fb and not E. You don't need your original file to follow these rules for this to work.
 
-However, in [traditional notation of the chords in popular music](https://en.wikipedia.org/wiki/Chord_names_and_symbols_(popular_music)), we avoid writing double-flat (bb) and double-sharp (x) for the sake of readability. Here, when they should appear to be perfectly correct in terms of harmony, the double-flat and double-sharp are transposed to their most simple equivalent.
+However, in [traditional notation of the chords in popular music](<https://en.wikipedia.org/wiki/Chord_names_and_symbols_(popular_music)>), we avoid writing double-flat (bb) and double-sharp (x) for the sake of readability. Here, when they should appear to be perfectly correct in terms of harmony, the double-flat and double-sharp are transposed to their most simple equivalent.
