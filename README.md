@@ -7,15 +7,21 @@
 If you know the original tone of the song you can choose a destination tone:
 
 ```python
-# Transpose the song in song_text from C# to A:
-chordstransposer.transpose(song_text, 'C#', 'A')
+>>> # Transpose the song in song_text from C to Eb:
+chordstransposer.transpose('C   Am   Dm  G  Gsus4/A G/B\nGod save our gracious Queen', 'C', 'Eb')
+
+# Result:
+# 'Eb   Cm   Fm  Bb  Bbsus4/C Bb/D\nGod save our gracious Queen'
 ```
 
 Alternatively you can specify a number of semitones to transpose by:
 
 ```python
-# Transpose the song 4 semitones below (a minor third):
-chordstransposer.transpose_by(song_text, -4)
+# Transpose the song 3 semitones below (a minor third):
+chordstransposer.transpose_by('C   Am   Dm  G  Gsus4/A G/B\nGod save our gracious Queen', -3)
+
+# Result:
+# 'A   F#m   Bm  E  Esus4/F# E/G#\nGod save our gracious Queen'
 ```
 
 ## Song file format
