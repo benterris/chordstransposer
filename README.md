@@ -7,7 +7,7 @@
 If you know the original tone of the song you can choose a destination tone:
 
 ```python
->>> # Transpose the song in song_text from C to Eb:
+# Transpose the song in song_text from C to Eb:
 chordstransposer.transpose('C   Am   Dm  G  Gsus4/A G/B\nGod save our gracious Queen', 'C', 'Eb')
 
 # Result:
