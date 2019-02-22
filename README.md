@@ -1,13 +1,13 @@
 # chordstransposer
 
-**chordstransposer** helps musicians by transposing the chords of a song.
+**chordstransposer** helps musicians by transposing the chords in song charts.
 
 ## Basic usage example
 
 If you know the original tone of the song you can choose a destination tone:
 
 ```python
-# Transpose the song in song_text from C to Eb:
+# Transpose a song from C to Eb:
 chordstransposer.transpose('C   Am   Dm  G  Gsus4/A G/B\nGod save our gracious Queen', 'C', 'Eb')
 
 # Result:
