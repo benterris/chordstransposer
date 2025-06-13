@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "chordstransposer"
 version = "0.1"
 description = ""
-#readme = "README.md"
+readme = "README.md"
 license = { text = "MIT" }
 authors = [
     { name = "Benjamin Terris" }
