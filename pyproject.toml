@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chordstransposer"
+version = "0.1"
+description = ""
+#readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Benjamin Terris" }
+]
+urls = {"Homepage" = "https://github.com/benterris/chords-transposer"}
+
+dependencies = []
+
+
+
+[tool.setuptools.packages.find]
+include = ["chordstransposer"]
